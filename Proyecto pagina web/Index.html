@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <!-- Encabezado con logo y titulo-->
+    <div class="encabezado">
+        <img src ="image.png" alt ="Logo de pio">
+        <center><h1>CINE PIO</h1></center>
+    </div>
+
+
+    <!-- Pelicula principal-->
+    <!-- Titulo-->
+    <center><h2>Deadpool 3</h2></center>
+    
+    <div class="contenedor">
+        <!-- Imagen poster-->
+        <center><img src="pelicula.jpg" alt="poster1"></center>
+
+        <!-- Sinopsis-->
+        <center><p>
+        <h3>Sinopsis</h3>
+        Wade Wilson (Deadpool) deberá aliarse con Wolverine para salvar su universo y evitar la desaparición de su galaxia. Esta premisa sugiere la necesidad de ver ciertas películas para entender la trama y los cameos, solo para aquellos fanáticos empedernidos.
+        <br>
+        <h3>Generos</h3>
+        </p></center>
+    </div>
+
+    <div class="generos">
+    <!-- Lista generos de la pelicula-->
+    <ul>
+        <li>Acción</li>
+        <li>Comedia</li>
+        <li>Aventura</li>
+        <li>Super heroes</li>
+        <li>Ciencia Ficción</li>
+    </ul>
+    </div>
+    <center>
+    <!-- reseña-->
+    <h2>Reseñas</h2>
+    <!-- Formulario para reseñas-->
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </center>
+
+
+    <!-- Formulario que permite agregar peliculas-->
+    <h2>Agregar Peliculas</h2>
+    <form id ="addMovieForm">
+        <label for="movieTitle"> Titulo: </label>
+        <input type="text" id="movieTitle" placeholder="Titulo de la pelicula"
+        required>
+
+        <label for="movieYear">Año:</label>
+        <input type="numer" id ="movieYear" placeholder="Año de estreno" required>
+
+        <label for="moviePoster">Poster(URL):</label>
+        <input type="url" id="moviePoster" placeholder="URL del poster" required>
+
+        <button type="submit">Agregar Pelicula</button>
+    </form>
+    <!-- Filtros y opciones para ordenar-->
+    <br>
+    <h2>Filtro de Peliculas</h2>
+    <div id="filters">
+        <label for="yearFilter">Filtrar por año:</label>
+        <input type="numer" id="yearFilter" placeholder="año">
+
+        <label for="sortMovies">Ordenar por:</label>
+        <select id="sortMovies">
+            <option value="title">Titulo</option>
+            <option value="year">Año</option>
+        </select>
+
+        <button id="ThemeToggle">cambiar a modo oscuro</button>
+    </div>
+
+    <!-- Contenedor para las tarjetas de peliculas -->
+    <div>
+        
+    </div>
+</body>
+</html>
