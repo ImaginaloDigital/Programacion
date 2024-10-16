@@ -7,7 +7,7 @@ segun si una condicion es verdadera o falsa.
 * if
 * else
 '''
-'''Este es un comentario para probar'''
+
 edad = 18
 
 if edad > 18 :
